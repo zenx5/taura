@@ -5,61 +5,399 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        .bg-container {
+            background-color: #003a54;
+            background-image: url('../logo-diseño.jpeg'); /* Asegúrate de tener la imagen de fondo o puedes usar un gradiente */
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .bg-container::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 58, 84, 0.85); /* Oscurece un poco la imagen */
+            z-index: -1;
+        }
+
+        .navbar .nav-link {
+            color: #ffffff;
+            font-weight: 500;
+            font-size: 12px;
+        }
+
+        .navbar .nav-link:hover {
+            color: #f4c034;
+        }
+    </style>
 </head>
 <body class="border border-red-500">
-    <head>
-        <div id="main_logo"></div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">Sobre Nós</a>
-                </li>
-                <li>
-                    <a href="#">Recrutamento e Seleção</a>
-                </li>
-                <li>
-                    <a href="#">Blog</a>
-                </li>
-                <li>
-                    <a href="#">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-    </head>
-    <section class="flex flex-row">
-        <h1>Transformando <span>Pessoas e Organizaçoes</span></h1>
-        <span>
-            <img src="" />
-        </span>
-    </section>
-    <section class="flex flex-row">
-        <div class="flex flex-col">
-            <span>
-                <h2>Numeros que <span>Impressionam</span></h2>
-                <img src=""/>
-            </span>
-            <span>
-                <span>
-                    <h3>+500</h3>
-                    <small>Clientes atendidos</small>
-                </span>
-                <span>
-                    <h3>+500</h3>
-                    <small>Clientes atendidos</small>
-                </span>
-                <span>
-                    <h3>+500</h3>
-                    <small>Clientes atendidos</small>
-                </span>
-                <span>
-                    <h3>+500</h3>
-                    <small>Clientes atendidos</small>
-                </span>
-            </span>
+    <header class="bg-container text-white">
+        <section class="container d-flex justify-content-between py-3">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="../logo.png" alt="Logo Futuro" style="height: 90px;" class="me-2">
+            </a>
+            <nav class="navbar navbar-expand-lg navbar-dark ">
+                <ul class="navbar-nav gap-3 align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sobre Nós</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Nossas Consultorias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Recrutamento e Seleção</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link fs-1" href="#"><i class="fas fa-search"></i></a></li>
+                </ul>
+            </nav>
+        </section>
+    
+        <section class="container py-5 mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 class="fw-light fs-1">Transformando</h4>
+                    <h1 class="display-4 fw-bold">Pessoas e<br>Organizações</h1>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <section class="container d-flex py-3">
+        <div class="" style="flex: 1;">
+            <header>
+                <h2 class="d-flex align-items-end gap-3 fw-light">Números que <img class="align-self-end" src="../stonk-logo.png" style="height: 4.5rem;" /><br/></h2>
+                <h2 class="fw-bold fs-1 mb-4">Impressionam</h2>
+            </header>
+            <div class="border border-warning">
+                <img src="../cuadricula.png" />
+            </div>
+        </div>
+        <div class="d-flex justify-content-center" style="flex: 1;">
+            <img src="../mujer.avif" alt="Mulher com prancheta" style=" height: 400px;">
         </div>
     </section>
+
+    <section class="d-flex">
+        <div class="shadow" style="flex: 1; border: 1px solid #FFC107;">
+            <img src="../logo-diseño.jpeg" alt="Equipe de trabalho" style="width: 100%; height: auto;">
+        </div>
+        <div class="my-4 py-4 d-flex flex-column justify-content-around" style="flex: 1; padding-left: 4rem; padding-right: 8rem; background-color: #f5f5f5;">
+            <h2 style="font-size: 2.5em; color: #333;">Sobre Nós</h2>
+            <p style="color: #555; line-height: 1.6;">A Futuro Recursos Humanos é referência em
+                soluções estratégicas de gestão de pessoas em
+                Caxias do Sul e região. Há mais de 9 anos,
+                transformamos organizações através do
+                desenvolvimento humano, conectando talentos
+                a oportunidades e impulsionando o crescimento
+                sustentável dos negócios.
+            </p>
+            <div>
+                <button type="button" class="btn btn-warning rounded-0">Descubra quem somos</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="container py-10">
+        <div class="card p-8 w-100 rounded-0 border-warning">
+            <div class="card-body d-flex flex-column justify-content-between gap-4">
+                <h2 style="font-size: 2.5em; color: #333;">Nossas Soluções</h2>
+                <div>
+                    <h6 class="card-title text-muted">Para empresas</h6>
+                    <div class="d-flex justify-content-around gap-4">
+                        <div>
+                            <div class="border rounded-circle my-4" style="width: 48px; height: 48px;"></div>
+                            <div>
+                                <div class="card-subtitle fw-bold">A Consultoria em RH -</div>
+                                <p class="card-text">Soluções personalizadas para
+                                    otimizar seus processos de
+                                    gestão de pessoas e alcançar
+                                    resultados extraordinários.</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="border rounded-circle my-4" style="width: 48px; height: 48px;"></div>
+                            <div>
+                                <div class="card-subtitle fw-bold">Recrutamento e Seleção -</div>
+                                <p class="card-text">Identificamos e atraímos os
+                                    melhores talentos para sua
+                                    empresa, utilizando metodologia
+                                    própria e ferramentas avançadas
+                                    de avaliação.</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="border rounded-circle my-4" style="width: 48px; height: 48px;"></div>
+                            <div>
+                                <div class="card-subtitle fw-bold">Desenvolvimento
+                                    Organizacional -</div>
+                                <p class="card-text">Programas
+                                    customizados de treinamento e
+                                    desenvolvimento para
+                                    potencializar o desempenho de
+                                    suas equipes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr />
+
+                <div>
+                    <h6 class="card-title text-muted">Para proﬁssionais</h6>
+                    <div class="d-flex justify-content-around gap-4">
+                        <div>
+                            <div class="border rounded-circle my-4" style="width: 48px; height: 48px;"></div>
+                            <div>
+                                <div class="card-subtitle fw-bold">Recolocação Proﬁssional -</div>
+                                <p class="card-text">Conectamos seu talento às
+                                    melhores oportunidades do
+                                    mercado.</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="border rounded-circle my-4" style="width: 48px; height: 48px;"></div>
+                            <div>
+                                <div class="card-subtitle fw-bold">Desenvolvimento de Carreira -</div>
+                                <p class="card-text">Orientação especializada para
+                                    impulsionar sua trajetória
+                                    proﬁssional.</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="border rounded-circle my-4" style="width: 48px; height: 48px;"></div>
+                            <div>
+                                <div class="card-subtitle fw-bold">Avaliação de Perﬁl -</div>
+                                <p class="card-text">Análise completa de suas
+                                    competências e potencialidades.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-dark rounded-0">Leia mais</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-4" style="background-color: #f0da99;">
+        <div class="container">
+            <h6 class="mb-4 fs-6">Para profissionais</h6>
+            <h2 class="mb-2">Busque sua recolocação profissional</h2>
+            <h5 class="mb-4 fs-5 text-muted">SUA OPORTUNIDADE ESTÁ AQUI</h5>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card h-100 rounded-0 border-dark shadow-lg">
+                        <div class="card-body p-4">
+                            <h4 class="card-title">Abastecedor de<br>linha de produção</h4>
+                            <p class="card-text text-muted mb-4">Caxias do Sul/RS</p>
+                            <p class="card-text">Será responsável por abastecer linha de produção, limpeza de máquinas...</p>
+                            <a href="#" class="btn btn-warning rounded-circle d-flex justify-content-center align-items-center ml-auto" style="width: 48px; height: 48px;">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 rounded-0 border-dark shadow-lg">
+                        <div class="card-body p-4">
+                            <h4 class="card-title">Abastecedor de<br>linha de produção</h4>
+                            <p class="card-text text-muted mb-4">Caxias do Sul/RS</p>
+                            <p class="card-text">Será responsável por abastecer linha de produção, limpeza de máquinas...</p>
+                            <a href="#" class="btn btn-warning rounded-circle d-flex justify-content-center align-items-center ml-auto" style="width: 48px; height: 48px;">+</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                    <button type="button" class="btn btn-outline-dark rounded-0">Veja todas as vagas em aberto</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="container py-5">
+        <h6 class="mb-2 fs-6">Oportunidades</h6>
+        <h2 class="mb-4">Depoimentos</h2>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card h-100 shadow-lg border-dark rounded-0 p-2">
+                    <div class="card-body">
+                        <p class="card-text">"Graças à Futuro RH, encontrei uma oportunidade alinhada ao meu perfil e cresci profissionalmente!"</p>
+                        <hr>
+                        <p class="card-text"><small class="text-muted">- João Silva</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-lg border-dark rounded-0 p-2">
+                    <div class="card-body">
+                        <p class="card-text">"Profissionais atenciosos que realmente entendem o mercado e oferecem oportunidades incríveis."</p>
+                        <hr>
+                        <p class="card-text"><small class="text-muted">- Mariana Souza</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container py-4">
+        <div class="card p-4 w-100 rounded-0 border-warning">
+            <div class="d-flex justify-content-center gap-4 mb-4">
+                <img class="w-10" style="width: 10%; height: auto;" src="../logo-diseño.jpeg" />
+                <div class="w-25">
+                    <h2 class="fs-2 mb-2">FAQ</h2>
+                    <h6 class="fs-6 text-muted">laoreet dolore magna aliquam erat volutpat.
+                        Ut wisi Lorem ipsum dolor sit amet</h6>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 g-2" >
+                <div class="col d-flex gap-4">
+                    <div class="d-flex flex-column justify-content-center align-items-center gap-4 h-100">
+                        <div class="rounded-circle border border-dark" style="width: 32px; height: 32px;" ></div>
+                        <div class="border border-dark" style="flex: 1;"></div>
+                        <div class="rounded-circle border border-dark" style="width: 32px; height: 32px;" ></div>
+                        <div class="border border-dark" style="flex: 1;"></div>
+                        <div class="rounded-circle border border-dark" style="width: 32px; height: 32px;" ></div>
+                        <div class="border border-dark" style="flex: 1;"></div>
+                    </div>
+                    <div class="" style="flex: 1;">
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem ipsum</h5>
+                                <p class="card-text text-muted small">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi Lorem ipsum dolor sit amet, consectetuer adipiscing</p>
+                                <a href="#" style="text-decoration: none;" class="btn btn-link btn-sm text-dark text-underline-none">Leia mais</a>
+                            </div>
+                        </div>
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem ipsum</h5>
+                                <p class="card-text text-muted small">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi Lorem ipsum dolor sit amet, consectetuer adipiscing</p>
+                                <a href="#" style="text-decoration: none;" class="btn btn-link btn-sm text-dark text-underline-none">Leia mais</a>
+                            </div>
+                        </div>
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem ipsum</h5>
+                                <p class="card-text text-muted small">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi Lorem ipsum dolor sit amet, consectetuer adipiscing</p>
+                                <a href="#" style="text-decoration: none;" class="btn btn-link btn-sm text-dark text-underline-none">Leia mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex gap-4">
+                    <div class="d-flex flex-column justify-content-center align-items-center gap-4 h-100">
+                        <div class="rounded-circle border border-dark" style="width: 32px; height: 32px;" ></div>
+                        <div class="border border-dark" style="flex: 1;"></div>
+                        <div class="rounded-circle border border-dark" style="width: 32px; height: 32px;" ></div>
+                        <div class="border border-dark" style="flex: 1;"></div>
+                        <div class="rounded-circle border border-dark" style="width: 32px; height: 32px;" ></div>
+                        <div class="border border-dark" style="flex: 1;"></div>
+                    </div>
+                    <div class="" style="flex: 1;">
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem ipsum</h5>
+                                <p class="card-text text-muted small">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi Lorem ipsum dolor sit amet, consectetuer adipiscing</p>
+                                <a href="#" style="text-decoration: none;" class="btn btn-link btn-sm text-dark text-underline-none">Leia mais</a>
+                            </div>
+                        </div>
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem ipsum</h5>
+                                <p class="card-text text-muted small">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi Lorem ipsum dolor sit amet, consectetuer adipiscing</p>
+                                <a href="#" style="text-decoration: none;" class="btn btn-link btn-sm text-dark text-underline-none">Leia mais</a>
+                            </div>
+                        </div>
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem ipsum</h5>
+                                <p class="card-text text-muted small">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi Lorem ipsum dolor sit amet, consectetuer adipiscing</p>
+                                <a href="#" style="text-decoration: none;" class="btn btn-link btn-sm text-dark">Leia mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5" style="background-color: #b9b9b9;">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-8 text-center">
+                    <h2>Blog</h2>
+                    <p class="lead text-muted">Laoreet dolore magna aliquam erat volutpat. Ut wisi Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-8 mb-5">
+                <div class="col">
+                    <div class="card rounded-0 h-100 shadow-lg border-0">
+                    <img src="../logo-diseño.jpeg" class="card-img-top" alt="Blog Post 1">
+                    <div class="card-body p-4 border border-dark border-top-0">
+                        <button class="btn btn-warning text-muted mb-2 rounded-0">Mercado de Trabalho</button>
+                        <p class="text-muted small">15 de Dezembro de 2024</p>
+                        <h5 class="card-title mb-4">Lorem ipsum dolor sit amet, consectetuer</h5>
+                        <a href="#" style="text-decoration: none;" class="text-dark d-flex gap-2 align-items-center">Leia mais <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.146-3.147a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5a.5.5 0 0 1-.5-.5z"/>
+                        </svg></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card rounded-0 h-100 shadow-lg border-0">
+                    <img src="../logo-diseño.jpeg" class="card-img-top" alt="Blog Post 1">
+                    <div class="card-body p-4 border border-dark border-top-0">
+                        <button class="btn btn-warning text-muted mb-2 rounded-0">Mercado de Trabalho</button>
+                        <p class="text-muted small">15 de Dezembro de 2024</p>
+                        <h5 class="card-title mb-4">Lorem ipsum dolor sit amet, consectetuer</h5>
+                        <a href="#" style="text-decoration: none;" class="text-dark d-flex gap-2 align-items-center">Leia mais <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.146-3.147a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5a.5.5 0 0 1-.5-.5z"/>
+                        </svg></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card rounded-0 h-100 shadow-lg border-0">
+                    <img src="../logo-diseño.jpeg" class="card-img-top" alt="Blog Post 1">
+                    <div class="card-body p-4 border border-dark border-top-0">
+                        <button class="btn btn-warning text-muted mb-2 rounded-0">Mercado de Trabalho</button>
+                        <p class="text-muted small">15 de Dezembro de 2024</p>
+                        <h5 class="card-title mb-4">Lorem ipsum dolor sit amet, consectetuer</h5>
+                        <a href="#" style="text-decoration: none;" class="text-dark d-flex gap-2 align-items-center">Leia mais <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.146-3.147a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5a.5.5 0 0 1-.5-.5z"/>
+                        </svg></a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mb-5">
+              <button type="button" class="btn btn-outline-secondary rounded-0">Veja todas as notícias</button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="py-5" style="background-color: #f0da99;">
+        <div class="container ">
+            
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+  
+    <script>
+        fetch('./footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer-container').innerHTML = html;
+                console.log(html)
+            });
+    </script>
 </body>
 </html>
