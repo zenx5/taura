@@ -20,10 +20,29 @@
         }
         .title-p1 {
             font-size: 2.5rem;
+            color: white;
         }
         .title-p2 {
             font-size: 3.5rem;
             font-weight: bold;
+            color: white;
+        }
+        .bg-container {
+            height: 65vh;
+            background-color: #003a54;
+            background-image: url('../bg-2.png');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .bg-container::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-color: rgba(206, 188, 134, 0.85); /* Oscurece un poco la imagen */
+            z-index: -1;
         }
 
         .hero {
@@ -77,11 +96,11 @@
     </style>
 </head>
 <body class="container-lg">
-<div>
+  <div class="bg-container">
         <header class="header">
             <div class="d-flex">
                 <a class="navbar-brand d-flex align-items-center" href="#">
-                    <img src="./images/logo.png" alt="Logo Futuro" style="height: 90px;" class="me-2">
+                    <img src="../logo.png" alt="Logo Futuro" style="height: 90px;" class="me-2">
                 </a>
                 <nav class="navbar navbar-expand-lg navbar-dark">
                     <ul class="navbar-nav gap-3 align-items-center">
@@ -108,37 +127,44 @@
   
   <section class="row" style="padding-top: 2rem; padding-bottom: 2rem; padding-left: 3rem; padding-right: 3rem;">
     <div class="col-6 hero">
-      <h2>Eleve seu potencial.</h2>
-      <h3>Conecte-se às melhores oportunidades.</h3>
-      <p>
-          A Futuro Recursos Humanos é o elo entre
-          profissionais talentosos e as empresas que
-          buscam os melhores talentos. Nossa equipe
-          especializada está pronta para te ajudar a
-          encontrar a oportunidade ideal, alinhando seu
-          perfil às necessidades do mercado de trabalho.</p>
+        <h2>
+            Para <br/>
+            <b>Profissionais</b>
+        </h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetuer
+            adipiscing elit, sed diam nonummy nibh euismod
+            tincidunt ut laoreet dolore magna aliquam erat
+            volutpat. Ut wisi enim ad minim veniam, quis
+            nostrud exerci tation ullamcorper suscipit
+            lobortis nisl ut aliquip ex ea commodo consequat.
+            Duis autem vel eum iriure dolor in hendrerit in
+            vulputate velit esse molestie consequat, vel illum
+            dolore eu feugiat nulla facilisis at vero eros et
+            accumsan et iusto odio dignissim qui blandit
+        </p>
     </div>
     <div class="col-6">
-      <img src="./images/recrutamento.png"  style="height: 100%; width: 100%; border: 1px solid #FFC107;" class="border-warning"/>
+      <img src="1.png"  style="height: 100%; width: 100%; border: 1px solid #FFC107;" class="border-warning"/>
     </div>
   </section>
 
   <section class="py-5" style="background-color: #faeab3; padding-top: 2rem; padding-bottom: 2rem; padding-left: 3rem; padding-right: 3rem;">
     <div class="container">
-      <p class="fw-semibold subtitle">Carreira</p>
-      <h2 class="mb-5 fw-bold">Por que se cadastrar?</h2>
-
       <div class="row g-4">
         <!-- Card 1 -->
         <div class="col-md-6">
-          <div class="card h-100 shadow-sm border-0 ">
+          <div class="card shadow h-100" style="border:1px solid #003a54;">
             <div class="card-body d-flex align-items-center gap-3">
               <div class="icon-circle">
-                <img src="icon1.svg" alt="Ícone 1" width="40">
+                <div style="width: 40px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+                    </svg>
+                </div>
               </div>
               <div>
-                <p class="fw-bold mb-1">Acesso exclusivo às <span class="text-dark">melhores vagas</span></p>
-                <p class="mb-0 text-muted">do mercado.</p>
+                <p class="fw-bold mb-1" style="font-size: 1.8rem;">Recolocação <br/>Profissional</p>
               </div>
             </div>
           </div>
@@ -146,137 +172,62 @@
 
         <!-- Card 2 -->
         <div class="col-md-6">
-          <div class="card h-100 shadow-sm border-0">
+          <div class="card shadow h-100 " style="border:1px solid #003a54;">
             <div class="card-body d-flex align-items-center gap-3">
               <div class="icon-circle">
-                <img src="icon2.svg" alt="Ícone 2" width="40">
+                <div style="width: 40px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+                    </svg>
+                </div>
               </div>
               <div>
-                <p class="fw-bold mb-1">Processo seletivo</p>
-                <p class="mb-0 text-muted">ágil e humanizado.</p>
+                <p class="fw-bold mb-1" style="font-size: 1.8rem;">Desenvolvimento <br/>de Carreira</p>
               </div>
             </div>
           </div>
         </div>
 
         <!-- Card 3 -->
-        <div class="col-md-6">
-          <div class="card h-100 shadow-sm border-0">
+        <div class="col-md-12">
+          <div class="card shadow h-100 " style="border:1px solid #003a54;">
             <div class="card-body d-flex align-items-center gap-3">
               <div class="icon-circle">
-                <img src="icon3.svg" alt="Ícone 3" width="40">
+                <div style="width: 40px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+                    </svg>
+                </div>
               </div>
               <div>
-                <p class="fw-bold mb-1">Oportunidades</p>
-                <p class="mb-0 text-muted">alinhadas ao seu perfil e experiência.</p>
+                <p class="fw-bold mb-1" style="font-size: 1.8rem;">Avaliação de Perfil</p>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Card 4 -->
-        <div class="col-md-6">
-          <div class="card h-100 shadow-sm border-0">
-            <div class="card-body d-flex align-items-center gap-3">
-              <div class="icon-circle">
-                <img src="icon4.svg" alt="Ícone 4" width="40">
-              </div>
-              <div>
-                <p class="fw-bold mb-1">Suporte</p>
-                <p class="mb-0 text-muted">e orientação em todas as etapas da candidatura.</p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </section>
 
-
-  <section class="py-5 bg-white" style="padding-top: 2rem; padding-bottom: 2rem; padding-left: 3rem; padding-right: 3rem;">
-    <div class="container">
-      <p class="fw-semibold subtitle">Carreira</p>
-      <h2 class="mb-5 fw-bold">Nosso Processo</h2>
-
-      <div class="row g-4">
-        <!-- Card 1 -->
-        <div class="col-md-6">
-          <div class="card h-100 border border-warning border-2">
-            <div class="card-body second-grid d-flex flex-column gap-3">
-              <div class="d-flex gap-4">
-                <img src="icon1.svg" alt="Ícone currículo" >
-                <p class="mb-1" style="font-size: 1.7rem;">Cadastro do <br/><span class="fw-bold text-primary">Currículo</span></p>
-              </div>
-              <p class="mb-0 text-muted">Insira seus dados e competências em nosso banco de talentos.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="col-md-6">
-          <div class="card h-100 border border-warning border-2">
-            <div class="card-body second-grid d-flex flex-column gap-3">
-              <div class="d-flex gap-4">
-                <img src="icon2.svg" alt="Ícone análise">
-                <p class="mb-1" style="font-size: 1.7rem;">Análise de <br/><span class="fw-bold text-primary">Perfil</span></p>
-              </div>
-              <p class="mb-0 text-muted">Nossos consultores avaliam suas qualificações e identificam oportunidades compatíveis.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="col-md-6">
-          <div class="card h-100 border border-warning border-2">
-            <div class="card-body second-grid d-flex flex-column gap-3">
-              <div class="d-flex gap-4">
-                <img src="icon3.svg" alt="Ícone encaminhamento" />
-                <p class="mb-1" style="font-size: 1.7rem;">Encaminhamento <br/><span class="fw-bold text-primary">para Empresas</span></p>
-              </div>
-              <p class="mb-0 text-muted">Conectamos você às empresas que buscam profissionais com o seu perfil.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="col-md-6">
-          <div class="card h-100 border border-warning border-2">
-            <div class="card-body second-grid d-flex flex-column gap-3">
-              <div class="d-flex gap-4">
-                <img src="icon4.svg" alt="Ícone feedback" />
-                <p class="mb-1" style="font-size: 1.7rem;">Acompanhamento <br/><span class="fw-bold text-primary">e Feedback</span></p>
-              </div>
-              <p class="mb-0 text-muted">Oferecemos suporte durante todo o processo seletivo.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="row" style="padding-top: 2rem; padding-bottom: 2rem; padding-left: 3rem; padding-right: 3rem;">
-    <div class="col-6 hero">
-      <small class="subtitle">Oportunidades</small>
-      <h2>Cadastre-se agora!</h2>
-      <p>
-          Lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit, sed diam nonummy nibh euismod
-          tincidunt ut laoreet dolore magna aliquam erat.</p>
-      <button class="button-action">Quero me cadastrar</button>
-    </div>
-    <div class="col-6">
-      <img src="./images/recrutamento.png"  style="height: 100%; width: 100%; border: 1px solid #FFC107;" class="border-warning"/>
-    </div>
-  </section>
-
-  <section class="py-5" style="background-color: #f0da99; padding-left: 5rem; padding-right: 5rem;">
+    <section class="pt-5" style="background-color: #b3c5cd; padding-left: 5rem; padding-right: 5rem;">
         <div class="row">
-            <div class="col" style="color:#003a54;">
-                <h2>VEJAS NOSSAS</h2>
-                <h1>OPORTUNIDADES EM ABERTO!</h1>
+            <div class="col" style="position: relative; padding-top: 5rem;">
+                <div style="width: 6rem; color: white; position: absolute; top: 0rem; left: 20rem;">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+                    </svg>
+                </div>
+                <h2 style="font-size: 1.2rem; color: #003d59">DESCUBRA COMO</h2>
+                <h1 style="color: #003d59">
+                    PODEMOS IMPULSIONAR
+                    O SEU CRESCIMENTO!
+                </h1>
                 <button type="button" style="background-color: transparent; color:#003a54; border:1px solid #003a54; padding: 1rem 3rem;">Clique aqui</button>
             </div>
-            <div class="col"></div>
+            <div class="col">
+              <img src="2.png" style=" height: 400px;"/>
+            </div>
         </div>
     </section>
 
@@ -286,8 +237,7 @@
           
           <!-- Logo -->
           <div class="col-md-3 mb-3 mb-md-0">
-            <img src="logo.png" alt="Logo Futuro" style="height: 50px;">
-            <p class="mb-0 small">Recursos Humanos</p>
+            <img src="../logo.png" alt="Logo Futuro" style="height: 50px;">
           </div>
     
           <!-- Contacto -->

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>Sobre Nos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
@@ -43,19 +43,38 @@
         }
         .title-p1 {
             font-size: 2.5rem;
+            color: white;
         }
         .title-p2 {
             font-size: 3.5rem;
             font-weight: bold;
+            color: white;
+        }
+        .bg-container {
+            height: 65vh;
+            background-color: #003a54;
+            background-image: url('../bg-2.png');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .bg-container::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-color: rgba(206, 188, 134, 0.85); /* Oscurece un poco la imagen */
+            z-index: -1;
         }
     </style>
 </head>
 <body class="container-lg">
-    <div>
+    <div class="bg-container">
         <header class="header">
             <div class="d-flex">
                 <a class="navbar-brand d-flex align-items-center" href="#">
-                    <img src="./images/logo.png" alt="Logo Futuro" style="height: 90px;" class="me-2">
+                    <img src="../logo.png" alt="Logo Futuro" style="height: 90px;" class="me-2">
                 </a>
                 <nav class="navbar navbar-expand-lg navbar-dark">
                     <ul class="navbar-nav gap-3 align-items-center">
@@ -94,7 +113,7 @@
             impulsionar empresas para o sucesso..</p>
         </div>
         <div class="col-6">
-        <img src="./images/recrutamento.png"  style="height: 100%; width: 100%; border: 1px solid #FFC107;" class="border-warning"/>
+        <img src="1.png"  style="height: 100%; width: 100%; border: 1px solid #FFC107;" class="border-warning"/>
         </div>
     </section>
 
@@ -102,9 +121,7 @@
         <div class="col" style="border: 1px solid #FFC107; padding: 3rem;">
             <div class="d-flex align-items-center gap-4" >
                 <div style="width: 8rem;">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-3">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
-                    </svg>
+                    <img src="icons/1.png" style="width: 7rem;"/>
                 </div>
                 <div class="d-flex flex-column">
                     <h2 style="font-size: 2.5rem;">Nossa</h2>
@@ -123,9 +140,7 @@
         <div class="col" style="border: 1px solid #FFC107; padding: 3rem;">
             <div class="d-flex align-items-center gap-4 " >
                 <div style="width: 8rem;">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-3">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
-                    </svg>
+                    <img src="icons/2.png" style="width: 7rem;"/>
                 </div>
                 <div class="d-flex flex-column">
                     <h2 style="font-size: 2.5rem;">Nossos</h2>
@@ -156,9 +171,7 @@
     <section style="background-color: #b3c5cd; padding: 2rem; margin-top: 4rem;" class="mb-4">
         <div class="d-flex justify-content-center align-items-center gap-4 mb-4">
             <div style="width: 8rem;">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-3">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
-                </svg>
+                <img src="icons/3.png" style="width: 7rem;"/>
             </div>
             <div class="d-flex flex-column">
                 <h2 style="font-size: 2.5rem;">Nossa</h2>
@@ -238,8 +251,7 @@
           
           <!-- Logo -->
           <div class="col-md-3 mb-3 mb-md-0">
-            <img src="logo.png" alt="Logo Futuro" style="height: 50px;">
-            <p class="mb-0 small">Recursos Humanos</p>
+            <img src="../logo.png" alt="Logo Futuro" style="height: 50px;">
           </div>
     
           <!-- Contacto -->
