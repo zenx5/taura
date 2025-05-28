@@ -52,7 +52,7 @@
         }
         .title-p2 {
             font-size: 3.5rem;
-            font-weight: bold;
+            font-weight: 600;
         }
 
         .text-primary {
@@ -87,9 +87,12 @@
                     </ul>
                 </nav>
             </div>
-            <section class="titles-zone">
-                <h1 class="title-p1 text-white">Transformando</h1>
-                <h2 class="title-p2 text-white">Pessoas e <br/> organizações</h2>
+            <section class="titles-zone d-flex flex-row justify-content-between">
+                <div>
+                    <h1 class="title-p1 text-white">Transformando</h1>
+                    <h2 class="title-p2 text-white">Pessoas e <br/> organizações</h2>
+                </div>
+                <img src="icons/9.png" style="width: 20rem; height: auto"/>
             </section>
         </header>
     </div>
@@ -97,7 +100,7 @@
         <div class="" style="flex: 1;">
             <div>
                 <h2 class="d-flex align-items-end gap-3 fw-light">Números que <img class="align-self-end" src="./icons/0.png" style="height: 4.5rem;" /><br/></h2>
-                <h2 class="fw-bold fs-1 mb-4">Impressionam</h2>
+                <h2 class="fw-semibold fs-1 mb-4">Impressionam</h2>
             </div>
             <div class="" >
                 <div class="container my-5">
@@ -130,11 +133,11 @@
 
     <section class="d-flex" style="padding-top:2rem;">
         <div class="shadow" style="flex: 1; border: 1px solid #FFC107; overflow: hidden;">
-            <img src="2.png" alt="Equipe de trabalho" style="width: 100%; height: auto;">
+            <img src="2.png" alt="Equipe de trabalho" style="width: 120%; height: auto;">
         </div>
-        <div class="my-4 py-4 d-flex flex-column justify-content-around" style="flex: 1; padding-left: 4rem; padding-right: 8rem; background-color: #efefef;">
-            <h2 style="font-size: 2.5em; color: #333;">Sobre Nós</h2>
-            <p style="color: #555; line-height: 1.6;">A Futuro Recursos Humanos é referência em
+        <div class="my-4 py-4 d-flex flex-column justify-content-around" style="flex: 1; background-color: #efefef;">
+            <h2 style="font-size: 2.5em; color: #333; padding-left: 1rem; padding-right: 1rem;">Sobre Nós</h2>
+            <p style="color: #555; line-height: 1.6; padding-left: 1rem; padding-right: 1rem;">A Futuro Recursos Humanos é referência em
                 soluções estratégicas de gestão de pessoas em
                 Caxias do Sul e região. Há mais de 9 anos,
                 transformamos organizações através do
@@ -142,7 +145,7 @@
                 a oportunidades e impulsionando o crescimento
                 sustentável dos negócios.
             </p>
-            <div>
+            <div style="padding-left: 1rem; padding-right: 1rem;">
                 <button type="button" class="btn btn-warning rounded-0">Descubra quem somos</button>
             </div>
         </div>
@@ -250,9 +253,9 @@
 
     <section style="background-color: #f0da99; margin-top: 2rem; padding: 3rem 5rem;">
         <div class="container">
-            <h6 class="mb-4 fs-6">Para profissionais</h6>
-            <h2 class="mb-2">Busque sua recolocação profissional</h2>
-            <h5 class="mb-4 fs-5 text-muted">SUA OPORTUNIDADE ESTÁ AQUI</h5>
+            <h6 class="mb-4 fs-6" style="color: #044059">Para profissionais</h6>
+            <h2 class="mb-2" style="font-weight: 600;">Busque sua recolocação profissional</h2>
+            <h5 class="mb-4 fs-5" style="color: #044059">SUA OPORTUNIDADE ESTÁ AQUI</h5>
             <div class="row row-cols-1 row-cols-md-2 g-4">
                 <div class="col">
                     <div class="card h-100 rounded-0 border-dark shadow-lg">
@@ -260,7 +263,9 @@
                             <h4 class="card-title">Abastecedor de<br>linha de produção</h4>
                             <p class="card-text text-muted mb-4">Caxias do Sul/RS</p>
                             <p class="card-text">Será responsável por abastecer linha de produção, limpeza de máquinas...</p>
-                            <a href="#" class="btn btn-warning rounded-circle d-flex justify-content-center align-items-center ml-auto" style="width: 48px; height: 48px;">+</a>
+                            <div class="d-flex justify-content-end">
+                                <a href="#" class="btn btn-warning rounded-circle d-flex justify-content-center align-items-center ml-auto" style="width: 48px; height: 48px;">+</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -270,7 +275,9 @@
                             <h4 class="card-title">Abastecedor de<br>linha de produção</h4>
                             <p class="card-text text-muted mb-4">Caxias do Sul/RS</p>
                             <p class="card-text">Será responsável por abastecer linha de produção, limpeza de máquinas...</p>
-                            <a href="#" class="btn btn-warning rounded-circle d-flex justify-content-center align-items-center ml-auto" style="width: 48px; height: 48px;">+</a>
+                            <div class="d-flex justify-content-end">
+                                <a href="#" class="btn btn-warning rounded-circle d-flex justify-content-center align-items-center ml-auto" style="width: 48px; height: 48px;">+</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -282,15 +289,15 @@
     </section>
 
     <section class="container py-5" style="padding-left: 6rem; padding-right: 6rem;">
-        <h6 class="mb-2 fs-6">Oportunidades</h6>
-        <h2 class="mb-4" style="font-size: 3rem; font-weight: semibold; padding-bottom: 2rem;">Depoimentos</h2>
+        <h6 class="mb-2 fs-6" style="color: #044059">Oportunidades</h6>
+        <h2 class="mb-4" style="font-size: 2rem; font-weight: semibold; padding-bottom: 1rem;">Depoimentos</h2>
         <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col">
                 <div class="card h-100 shadow-lg border-dark rounded-0 p-2">
                     <div class="card-body">
                         <p class="card-text">"Graças à Futuro RH, encontrei uma oportunidade alinhada ao meu perfil e cresci profissionalmente!"</p>
                         <hr>
-                        <p class="card-text"><small class="text-muted">- João Silva</small></p>
+                        <p class="card-text"><small style="color: #044059">- João Silva</small></p>
                     </div>
                 </div>
             </div>
@@ -299,7 +306,7 @@
                     <div class="card-body">
                         <p class="card-text">"Profissionais atenciosos que realmente entendem o mercado e oferecem oportunidades incríveis."</p>
                         <hr>
-                        <p class="card-text"><small class="text-muted">- Mariana Souza</small></p>
+                        <p class="card-text"><small style="color: #044059">- Mariana Souza</small></p>
                     </div>
                 </div>
             </div>
@@ -403,7 +410,7 @@
                         <button class="btn btn-warning text-muted mb-2 rounded-0">Mercado de Trabalho</button>
                         <p class="text-muted small">15 de Dezembro de 2024</p>
                         <h5 class="card-title mb-4">Lorem ipsum dolor sit amet, consectetuer</h5>
-                        <a href="#" style="text-decoration: none;" class="text-dark d-flex gap-2 align-items-center">Leia mais <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <a href="#" style="text-decoration: none; color: #044059" class=" d-flex gap-2 align-items-center">Leia mais <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.146-3.147a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5a.5.5 0 0 1-.5-.5z"/>
                         </svg></a>
                     </div>
@@ -416,7 +423,7 @@
                         <button class="btn btn-warning text-muted mb-2 rounded-0">Carreira</button>
                         <p class="text-muted small">15 de Dezembro de 2024</p>
                         <h5 class="card-title mb-4">Lorem ipsum dolor sit amet, consectetuer</h5>
-                        <a href="#" style="text-decoration: none;" class="text-dark d-flex gap-2 align-items-center">Leia mais <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <a href="#" style="text-decoration: none; color: #044059" class=" d-flex gap-2 align-items-center">Leia mais <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.146-3.147a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5a.5.5 0 0 1-.5-.5z"/>
                         </svg></a>
                     </div>
@@ -429,7 +436,7 @@
                         <button class="btn btn-warning text-muted mb-2 rounded-0">Gestão</button>
                         <p class="text-muted small">15 de Dezembro de 2024</p>
                         <h5 class="card-title mb-4">Lorem ipsum dolor sit amet, consectetuer</h5>
-                        <a href="#" style="text-decoration: none;" class="text-dark d-flex gap-2 align-items-center">Leia mais <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <a href="#" style="text-decoration: none; color: #044059" class="d-flex gap-2 align-items-center">Leia mais <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.146-3.147a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5a.5.5 0 0 1-.5-.5z"/>
                         </svg></a>
                     </div>
@@ -444,12 +451,16 @@
     
     <section class="pt-5" style="background-color: #f0da99; padding-left: 5rem; padding-right: 5rem;">
         <div class="row">
-            <div class="col">
-                <h2>Entre em contacto</h2>
-                <h1>
+            <div class="col d-flex flex-column gap-3 justify-content-end pb-4">
+                <span class="d-flex flex-row justify-content-end">
+                    <img src="icons/10.png" style="width: 6rem;"/>
+                </span>
+                <h2 style="font-size: 1.2rem; color:#003a54">Entre em contacto</h2>
+                <h1 style="font-size: 2rem; color:#003a54">
                     E DESCUBRA  COMO PODEMOS
 IMPULSIONAR O SEU CRESCIMENTO!
                 </h1>
+                <button type="button" style="background-color: transparent; color:#003a54; border:1px solid #003a54; padding: 0.5rem 2rem;">Clique aqui</button>
             </div>
             <div class="col">
                 <img src="4.png" style=" height: 400px;"/>
